@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppleMusic.Pages.AlbumPage"
+             Title="AlbumPage">
+    <VerticalStackLayout VerticalOptions="Center" >
+
+        <Border WidthRequest="150" HeightRequest="150" 
+        StrokeThickness="0"
+        StrokeShape="RoundRectangle 10,10,10,10" Margin="0,20">
+            
+        <Rectangle BackgroundColor="Aqua" ></Rectangle>
+        </Border>
+
+        <Label 
+            Text="Nom de l'album"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"  Margin="0,5"/>
+
+        <Label 
+            Text="Chanteur"
+            TextColor="DarkRed"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" Margin="0,5"/>
+
+        <Label 
+            Text="Genre - année"
+            TextColor="Grey"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" Margin="0,5"/>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="0,5" >
+            <Button Text="Lecture" Margin="10,0"/>
+            <Button Text="Aléatoire" Margin="10,0"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout VerticalOptions="End">
+        </HorizontalStackLayout>       
+
+    </VerticalStackLayout>
+</ContentPage>
