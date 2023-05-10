@@ -53,11 +53,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Views\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="Pages\AlbumPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\DetailAlbumView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

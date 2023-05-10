@@ -12,23 +12,28 @@
         <ShellContent
             Title="Ecouter"
             ContentTemplate="{DataTemplate local:Pages.AlbumPage}"
-            Route="Pages.AlbumPage" />
+            Route="Pages.AlbumPage" 
+            Icon="{OnPlatform 'play.png'}" />
         <ShellContent
             Title="Explorer"
             ContentTemplate="{DataTemplate local:Pages.AlbumPage}"
-            Route="Pages.AlbumPage" />
+            Route="Pages.AlbumPage" 
+            Icon="{OnPlatform 'play.png'}" />
         <ShellContent
             Title="Radio"
             ContentTemplate="{DataTemplate local:Pages.AlbumPage}"
-            Route="Pages.AlbumPage" />
+            Route="Pages.AlbumPage"
+            Icon="{OnPlatform 'radio.png'}" />
         <ShellContent
             Title="Bibliothèque"
             ContentTemplate="{DataTemplate local:Pages.AlbumPage}"
-            Route="Pages.AlbumPage" />
+            Route="Pages.AlbumPage" 
+            Icon="{OnPlatform 'disques-de-musique.png'}" />
         <ShellContent
             Title="Rechercher"
             ContentTemplate="{DataTemplate local:Pages.AlbumPage}"
-            Route="Pages.AlbumPage" />
+            Route="Pages.AlbumPage" 
+            Icon="{OnPlatform 'cocher.png'}" />
     </TabBar>
 
 </Shell>
