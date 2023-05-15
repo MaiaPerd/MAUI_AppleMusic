@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUI_TP1_AppleMusic.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUI_TP1_AppleMusic"
+    Shell.FlyoutBehavior="Disabled">
+
+   <TabBar>
+
+
+        <ShellContent
+            Title="Ecouter"
+            ContentTemplate="{DataTemplate local:Pages.AlbumPage}"
+            Route="Pages.AlbumPage" 
+            Icon="{OnPlatform 'dotnet_bot.png'}" />
+        <ShellContent
+            Title="Explorer"
+            ContentTemplate="{DataTemplate local:Pages.AlbumPage}"
+            Route="Pages.AlbumPage" 
+            Icon="{OnPlatform 'dotnet_bot.png'}" />
+        <ShellContent
+            Title="Radio"
+            ContentTemplate="{DataTemplate local:Pages.AlbumPage}"
+            Route="Pages.AlbumPage"
+            Icon="{OnPlatform 'dotnet_bot.png'}" />
+        <ShellContent
+            Title="Bibliothèque"
+            ContentTemplate="{DataTemplate local:Pages.AlbumPage}"
+            Route="Pages.AlbumPage" 
+            Icon="{OnPlatform 'dotnet_bot.png'}" />
+        <ShellContent
+            Title="Rechercher"
+            ContentTemplate="{DataTemplate local:Pages.AlbumPage}"
+            Route="Pages.AlbumPage" 
+            Icon="{OnPlatform 'dotnet_bot.png'}" />
+    </TabBar>
+</Shell>
+
