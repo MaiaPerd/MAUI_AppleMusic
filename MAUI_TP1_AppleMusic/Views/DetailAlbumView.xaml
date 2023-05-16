@@ -36,10 +36,10 @@
         <HorizontalStackLayout HorizontalOptions="Center" Margin="0,5" >
             <Button Text="▶ Lecture" Margin="10,0" WidthRequest="150" />
 
-
-
             <Button Text="Aléatoire" Margin="10,0"  WidthRequest="150"/>
         </HorizontalStackLayout>
+
+      
 
     </VerticalStackLayout>
 </ContentView>

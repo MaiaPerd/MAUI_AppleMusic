@@ -42,7 +42,8 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="50,50" />
+		<MauiImage Update="Resources\Images\biblotheque.svg" BaseSize="20,20" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -58,10 +59,26 @@
 	<ItemGroup>
 	  <None Remove="Pages\" />
 	  <None Remove="Views\" />
+	  <None Remove="Resources\Images\wifi_tethering-wifi_tethering_fill1_symbol.svg" />
+	  <None Remove="Models\" />
+	  <None Remove="Stub\" />
+	  <None Remove="Resources\Images\menu.svg" />
+	  <None Remove="Resources\Images\grid.svg" />
+	  <None Remove="Resources\Images\check.svg" />
+	  <None Remove="Resources\Images\ecouter.svg" />
+	  <None Remove="Resources\Images\ellipsi.svg" />
+	  <None Remove="Resources\Images\play.svg" />
+	  <None Remove="Resources\Images\playplay.svg" />
+	  <None Remove="Resources\Images\radio.svg" />
+	  <None Remove="Resources\Images\recherche.svg" />
+	  <None Remove="Resources\Images\back.svg" />
+	  <None Remove="Resources\Images\bibliotheque.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Pages\" />
 	  <Folder Include="Views\" />
+	  <Folder Include="Models\" />
+	  <Folder Include="Stub\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="Pages\AlbumPage.xaml">
@@ -70,5 +87,8 @@
 	  <MauiXaml Update="Views\DetailAlbumView.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\bibliotheque.svg" />
 	</ItemGroup>
 </Project>

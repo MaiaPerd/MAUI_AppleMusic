@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:MAUI_TP1_AppleMusic.Views"
+             x:Class="MAUI_TP1_AppleMusic.Views.MusicListView">
+   <VerticalStackLayout Margin="0,20">
+       <views:DividerAlbumView></views:DividerAlbumView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerMorceauView></views:DividerMorceauView>
+       <views:MusicDetailView></views:MusicDetailView>
+       <views:DividerAlbumView></views:DividerAlbumView>
+       
+    </VerticalStackLayout>
+</ContentView>
+

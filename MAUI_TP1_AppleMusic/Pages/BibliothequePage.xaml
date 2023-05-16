@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_TP1_AppleMusic.Pages.BibliothequePage"
+             xmlns:views="clr-namespace:MAUI_TP1_AppleMusic.Views"
+             Title="Bibliotheque">
+   <Grid Padding="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                   
+                    <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Text="texr"
+                           FontAttributes="Italic"
+                           VerticalOptions="End" />
+        <Button Clicked="Button_Clicked">
+
+
+        </Button>
+                </Grid>
+</ContentPage>
