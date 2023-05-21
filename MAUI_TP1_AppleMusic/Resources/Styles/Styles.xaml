@@ -162,7 +162,6 @@
         <Setter Property="WidthRequest" Value="150" />
         <Setter Property="HeightRequest" Value="150" />
         <Setter Property="IsClippedToBounds" Value="True" />
-        <Setter Property="Margin" Value="10,15" />
     </Style>
 
     <Style x:Key="SmalImage" TargetType="Frame">
