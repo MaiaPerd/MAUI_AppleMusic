@@ -1,14 +1,14 @@
-﻿namespace MAUI_TP1_AppleMusic.Pages;
+﻿using System.Collections;
+using System.Collections.ObjectModel;
+using MAUI_TP1_AppleMusic.Models;
+using MAUI_TP1_AppleMusic.Stub;
+
+namespace MAUI_TP1_AppleMusic.Pages;
 
 public partial class BibliothequePage : ContentPage
 {
-	public BibliothequePage()
+    public BibliothequePage()
 	{
-		InitializeComponent();
-	}
-
-    void Button_Clicked(System.Object sender, System.EventArgs e)
-    {
-		Navigation.PushAsync(new AlbumPage());
+        InitializeComponent();
     }
 }

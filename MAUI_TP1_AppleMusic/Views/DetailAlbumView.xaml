@@ -1,45 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:MAUI_TP1_AppleMusic.Views"
              x:Class="MAUI_TP1_AppleMusic.Views.DetailAlbumView">
-    <VerticalStackLayout>
+        <VerticalStackLayout>
+            <Frame Style="{StaticResource Image}"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+                <Image Style="{StaticResource AlbumImage}" Source="{Binding ImageName}"    WidthRequest="200" 
+                    HeightRequest="200"></Image>
+            </Frame>
+        
+            <Label Style="{StaticResource AlbumTitle}"
+                Text="{Binding Nom}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
 
-        <Border VerticalOptions="Center"
-                HorizontalOptions="Center" 
-                WidthRequest="200" 
-                HeightRequest="200" 
-                StrokeThickness="0.5"
-                StrokeShape="RoundRectangle 10,10,10,10" 
-                Margin="10,15" 
-                BackgroundColor="Aqua" />
+            <Label Style="{StaticResource AlbumAutor}"
+                Text="{Binding Auteur}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
 
-        <Label     
-            Text="Nom de l'album"
-            FontAttributes="Bold"
-            FontSize="18"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"  Margin="0,2"/>
+            <Label Style="{StaticResource AlbumYear}"
+                Text="{Binding Annee}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
 
-        <Label 
-            Text="Chanteur"
-            TextColor="{StaticResource Primary}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" Margin="0,2"/>
-
-        <Label 
-            Text="Genre - année"
-            TextColor="Grey"
-            FontSize="10"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" Margin="0,2"/>
-
-        <HorizontalStackLayout HorizontalOptions="Center" Margin="0,5" >
-            <Button Text="▶ Lecture" Margin="10,0" WidthRequest="150" />
-
-            <Button Text="Aléatoire" Margin="10,0"  WidthRequest="150"/>
-        </HorizontalStackLayout>
-
-      
-
-    </VerticalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,5" >
+                <views:BouttonView Nom="Lecture" ImageNom="play_red.png"></views:BouttonView>
+                <views:BouttonView Nom="Aléatoire" ImageNom="shuffle.png"></views:BouttonView>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
 </ContentView>

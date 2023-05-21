@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_TP1_AppleMusic.Views.BouttonView">
+    <VerticalStackLayout>
+        <Border Style="{StaticResource AlbumButton}"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10"></RoundRectangle>
+            </Border.StrokeShape>
+            <Border.Content>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                  <Image Source="{Binding ImageNom}" Style="{StaticResource Size15Image}"></Image> 
+                  <Label Text="{Binding Nom}" Style="{StaticResource Button}" />
+                </HorizontalStackLayout>
+            </Border.Content>
+        </Border>
+    </VerticalStackLayout>
+</ContentView>
+

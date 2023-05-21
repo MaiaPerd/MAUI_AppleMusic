@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_TP1_AppleMusic.Views.CategoriesListView">
+    <ListView ItemsSource="{Binding Categories}" SelectionMode="None">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="10" ColumnDefinitions="35, *, 25" RowDefinitions="*">
+                        <Image Grid.Row="0" Grid.Column="0" Source="{Binding ImageName}" Style="{StaticResource BasicImage}" />
+                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding Nom}" FontSize="Medium" />
+                        <Image Grid.Row="0" Grid.Column="2" Source="chevron.png" Style="{StaticResource Size10Image}" />
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentView>
+

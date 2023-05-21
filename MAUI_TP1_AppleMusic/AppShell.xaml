@@ -4,37 +4,28 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MAUI_TP1_AppleMusic"
-    BackgroundColor="{StaticResource White}"
-    Shell.FlyoutBehavior="Disabled"
-   >
+    Shell.FlyoutBehavior="Disabled">
 
    <TabBar>
-
-
         <ShellContent
             Title="Ecouter"
             ContentTemplate="{DataTemplate local:Pages.NoPage}"
-            Route="Pages/NoPage"
             Icon="{OnPlatform 'ecouter.png'}"/>
         <ShellContent
             Title="Explorer"
             ContentTemplate="{DataTemplate local:Pages.NoPage}"
-            Route="Pages/NoPage"
             Icon="{OnPlatform 'grid.png'}"/>
         <ShellContent
             Title="Radio"
             ContentTemplate="{DataTemplate local:Pages.AlbumPage}"
-            Route="Pages/NoPage"
             Icon="{OnPlatform 'radio.png'}"/>
         <ShellContent
             Title="Bibliothèque"
-            ContentTemplate="{DataTemplate local:Pages.BibliothequePage}"
-            Route="Pages/BibliothequePage" 
+            ContentTemplate="{DataTemplate local:Pages.BibliothequePage}" 
             Icon="{OnPlatform 'bibliotheque.png'}" />
         <ShellContent
             Title="Rechercher"
             ContentTemplate="{DataTemplate local:Pages.NoPage}"
-            Route="Pages/NoPage"
             Icon="{OnPlatform 'recherche.png'}" />
     </TabBar>
 </Shell>

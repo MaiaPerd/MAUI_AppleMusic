@@ -73,6 +73,29 @@
 	  <None Remove="Resources\Images\recherche.svg" />
 	  <None Remove="Resources\Images\back.svg" />
 	  <None Remove="Resources\Images\bibliotheque.svg" />
+	  <None Remove="Resources\Images\shuffle.svg" />
+	  <None Remove="Resources\Images\play_red.svg" />
+	  <None Remove="Resources\Images\etoile.svg" />
+	  <None Remove="Resources\Images\etoile_grise.svg" />
+	  <None Remove="Resources\Images\telecharger.svg" />
+	  <None Remove="Resources\Images\ellipsis.svg" />
+	  <None Remove="Resources\Images\BitchesBrew.png" />
+	  <None Remove="Resources\Images\ChroniquesBluesymentales.png" />
+	  <None Remove="Resources\Images\KnowWhatIMean.png" />
+	  <None Remove="Resources\Images\OnTheTenderSpotOfEveryCallousedMoment.png" />
+	  <None Remove="Resources\Images\SpeakNoEvil.png" />
+	  <None Remove="Resources\Images\SearchForTheNewLand.png" />
+	  <None Remove="Resources\Images\bitches_brew.png" />
+	  <None Remove="Resources\Images\speak_no_evil.png" />
+	  <None Remove="Resources\Images\search_for_the_new_land.png" />
+	  <None Remove="Resources\Images\chroniques_bluesymentales.png" />
+	  <None Remove="Resources\Images\know_what_i_mean.png" />
+	  <None Remove="Resources\Images\on_the_tender_spot.png" />
+	  <None Remove="Resources\Images\albums.svg" />
+	  <None Remove="Resources\Images\artistes.svg" />
+	  <None Remove="Resources\Images\chevron.svg" />
+	  <None Remove="Resources\Images\compilations.svg" />
+	  <None Remove="Resources\Images\playlists.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Pages\" />
@@ -87,8 +110,5 @@
 	  <MauiXaml Update="Views\DetailAlbumView.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
-	</ItemGroup>
-	<ItemGroup>
-	  <BundleResource Include="Resources\Images\bibliotheque.svg" />
 	</ItemGroup>
 </Project>

@@ -2,41 +2,17 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:MAUI_TP1_AppleMusic.Views"
              x:Class="MAUI_TP1_AppleMusic.Views.MusicListView">
-   <VerticalStackLayout Margin="0,20">
-       <views:DividerAlbumView></views:DividerAlbumView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerMorceauView></views:DividerMorceauView>
-       <views:MusicDetailView></views:MusicDetailView>
-       <views:DividerAlbumView></views:DividerAlbumView>
-       
+    <VerticalStackLayout Style="{StaticResource MusicList}">
+        <Line></Line>
+        <ListView ItemsSource="{Binding Musiques}" SelectionMode="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <views:MusicDetailView Nom="{Binding Nom}"></views:MusicDetailView>    
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </VerticalStackLayout>
 </ContentView>
 

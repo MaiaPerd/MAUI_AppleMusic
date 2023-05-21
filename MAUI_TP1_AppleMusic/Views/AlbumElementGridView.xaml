@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_TP1_AppleMusic.Views.AlbumElementGridView">
+    <CollectionView ItemsSource="{Binding Albums}" SelectionMode="None" >
+        <CollectionView.ItemsLayout>
+            <GridItemsLayout Orientation="Vertical" Span="2" />
+        </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <VerticalStackLayout HeightRequest="180" Margin="10">
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped" NumberOfTapsRequired="1" CommandParameter="{Binding}" />
+                    </VerticalStackLayout.GestureRecognizers>
+                    <Image Source="{Binding ImageName}" HeightRequest="150" WidthRequest="150"></Image>
+                    <Label Text="{Binding Nom}"  FontSize="14" MaxLines="1" WidthRequest="150"></Label>
+                    <Label Text="{Binding Auteur}" TextColor="Gray" FontSize="12" MaxLines="1" WidthRequest="150"></Label>
+                </VerticalStackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>    
+    </CollectionView>
+</ContentView>
+
