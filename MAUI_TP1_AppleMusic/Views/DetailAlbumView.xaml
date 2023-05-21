@@ -6,8 +6,7 @@
             <Frame Style="{StaticResource Image}"
                    VerticalOptions="Center"
                    HorizontalOptions="Center">
-                <Image Style="{StaticResource AlbumImage}" Source="{Binding ImageName}"    WidthRequest="200" 
-                    HeightRequest="200"></Image>
+                <Image Style="{StaticResource AlbumImage}" Source="{Binding ImageName}"></Image>
             </Frame>
         
             <Label Style="{StaticResource AlbumTitle}"

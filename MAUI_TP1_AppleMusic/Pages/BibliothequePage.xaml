@@ -3,22 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI_TP1_AppleMusic.Pages.BibliothequePage"
              xmlns:views="clr-namespace:MAUI_TP1_AppleMusic.Views"
-             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
-             
-             ios:Page.LargeTitleDisplay="Always"
-             Title="Bibliotheque">
+             Title="Bibliothèque">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Modifier" />
     </ContentPage.ToolbarItems>
-    <AbsoluteLayout VerticalOptions="Start" HorizontalOptions="Center">
-        <ScrollView>
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
             <VerticalStackLayout>
                 <views:CategoriesListView></views:CategoriesListView>
                 <Label Text="Ajout récents" Style="{StaticResource BoldTitle}"></Label>
                 <views:AlbumElementGridView></views:AlbumElementGridView>
             </VerticalStackLayout>
         </ScrollView>
-        <views:AlbumPlayView></views:AlbumPlayView>
-    </AbsoluteLayout>
-    
+        <VerticalStackLayout AbsoluteLayout.LayoutBounds="0, 1, 1, 64" 
+                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
+             <views:AlbumPlayView></views:AlbumPlayView>
+        </VerticalStackLayout>
+    </AbsoluteLayout> 
 </ContentPage>

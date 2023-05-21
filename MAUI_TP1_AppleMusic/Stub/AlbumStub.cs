@@ -42,7 +42,7 @@ namespace MAUI_TP1_AppleMusic.Stub
             list.Add(new Musique(numero: 8, nom: "Witch Hunt", fav: false));
             list.Add(new Musique(numero: 9, nom: "Witch Hunt", fav: true));
             list.Add(new Musique(numero: 10, nom: "Witch Hunt", fav: false));
-            list.Add(new Musique(numero: 11, nom: "Witch Hunt", fav: true));
+            list.Add(new Musique(numero: 11, nom: "Witch Hunt (Ruby Van Gelder Edition)", fav: true));
 
             return list;
         }

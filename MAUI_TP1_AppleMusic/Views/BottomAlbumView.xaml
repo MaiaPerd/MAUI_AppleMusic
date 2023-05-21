@@ -2,37 +2,15 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI_TP1_AppleMusic.Views.BottomAlbumView">
-    <VerticalStackLayout Margin="2,6" HorizontalOptions="StartAndExpand">
-        <Label     
-            Text="Masterisé pour Apple"
-            FontSize="18"
-            VerticalOptions="Center" 
-            Margin="0,8"
-            TextColor="Gray" />
+    <VerticalStackLayout HorizontalOptions="StartAndExpand" Margin="0, 0, 0, 66">
+        <Label Style="{StaticResource BottomAlbum}"
+            Text="11 juin 2020" />
 
-        <Label     
-            Text="11 juin 2020"
-            FontAttributes="Bold"
-            FontSize="18"
-            VerticalOptions="Center" 
-            Margin="0,2"
-            TextColor="Gray"/>
+        <Label Style="{StaticResource BottomAlbum}"
+            Text="11 morceaux, 48 minutes" />
 
-        <Label     
-            Text="11 morceaux, 48 minutes"
-            FontAttributes="Bold"
-            FontSize="18"
-            VerticalOptions="Center" 
-            Margin="0,2"
-            TextColor="Gray"/>
-
-        <Label     
-            Text="Blue Note Recoords; 2020 Capitol Recoreds, LLC"
-            FontAttributes="Bold"
-            FontSize="18"
-            VerticalOptions="Center"
-            Margin="0,2"
-            TextColor="Gray"/>
+        <Label Style="{StaticResource BottomAlbum}"
+            Text="Blue Note Recoords; 2020 Capitol Recoreds, LLC"/>
     </VerticalStackLayout>
 </ContentView>
 

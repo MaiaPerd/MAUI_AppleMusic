@@ -2,14 +2,27 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI_TP1_AppleMusic.Views.AlbumPlayView">
-    <HorizontalStackLayout  HorizontalOptions="Fill" BackgroundColor="White" HeightRequest="64">
-        <Image Source="know_what_i_mean.png" Style="{StaticResource BasicImage}"></Image>
-        <Label 
-            Text="titre de l'album"
+    <Grid Style="{StaticResource Album}">
+        <Frame Style="{StaticResource SmalImage}"
+               Grid.Column="0"
+               VerticalOptions="Center"
+               HorizontalOptions="Center">
+            <Image Source="chroniques_bluesymentales.png" Margin="20" Style="{StaticResource PlayImage}"/>
+        </Frame>
+     
+        <Label Grid.Column="1" 
+            Text="Caméra terminus"
+            FontSize="Medium"
             VerticalOptions="Center" />
         
-        <Image Source="playplay.png" Style="{StaticResource Size15Image}"></Image>
-        <Image Source="play.png" Style="{StaticResource Size15Image}"></Image>
-    </HorizontalStackLayout>
+        <Image Grid.Column="2"
+               Source="play.png"
+               Style="{StaticResource Size15Image}" />
+        <Image Grid.Column="3"
+               Source="playplay.png"
+               Style="{StaticResource BasicImage}"
+               Margin="15"/>
+    </Grid>
+   
 </ContentView>
 

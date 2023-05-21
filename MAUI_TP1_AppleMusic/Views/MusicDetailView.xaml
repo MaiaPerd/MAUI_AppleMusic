@@ -18,6 +18,8 @@
                Text="{Binding Nom}"
                Style="{StaticResource MusicName}"
                VerticalOptions="Center"
+               MaxLines="1"
+               MaximumWidthRequest="220"
                HorizontalOptions="Start"/>
         <Image Grid.Column="3"
                Source="telecharger.png"

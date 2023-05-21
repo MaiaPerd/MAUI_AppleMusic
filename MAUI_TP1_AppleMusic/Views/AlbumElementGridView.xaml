@@ -4,7 +4,7 @@
              x:Class="MAUI_TP1_AppleMusic.Views.AlbumElementGridView">
     <CollectionView ItemsSource="{Binding Albums}" SelectionMode="None" >
         <CollectionView.ItemsLayout>
-            <GridItemsLayout Orientation="Vertical" Span="2" />
+            <GridItemsLayout Orientation="Vertical" Span="2"/>
         </CollectionView.ItemsLayout>
         <CollectionView.ItemTemplate>
             <DataTemplate>
@@ -12,9 +12,11 @@
                     <VerticalStackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped" NumberOfTapsRequired="1" CommandParameter="{Binding}" />
                     </VerticalStackLayout.GestureRecognizers>
-                    <Image Source="{Binding ImageName}" HeightRequest="150" WidthRequest="150"></Image>
-                    <Label Text="{Binding Nom}"  FontSize="14" MaxLines="1" WidthRequest="150"></Label>
-                    <Label Text="{Binding Auteur}" TextColor="Gray" FontSize="12" MaxLines="1" WidthRequest="150"></Label>
+                    <Frame Style="{StaticResource MediumImage}">
+                        <Image Source="{Binding ImageName}" Style="{StaticResource Medium}"></Image>
+                    </Frame>
+                    <Label Text="{Binding Nom}" Style="{StaticResource Grid}" ></Label>
+                    <Label Text="{Binding Auteur}" TextColor="Gray" FontSize="12" Style="{StaticResource Grid}"></Label>
                 </VerticalStackLayout>
             </DataTemplate>
         </CollectionView.ItemTemplate>    

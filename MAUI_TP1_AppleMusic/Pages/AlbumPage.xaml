@@ -4,46 +4,53 @@
              xmlns:views="clr-namespace:MAUI_TP1_AppleMusic.Views"
              x:Class="MAUI_TP1_AppleMusic.Pages.AlbumPage" 
              Title="{Binding Path=Album.Nom}">
-    <Shell.BackButtonBehavior>
-        <BackButtonBehavior TextOverride="Bibliotheque" />   
-    </Shell.BackButtonBehavior>
+  
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add"  IconImageSource="check.png" />
+        <ToolbarItem Text="Add" IconImageSource="check.png" />
         <ToolbarItem Text="More" IconImageSource="ellipsi.png"/>
     </ContentPage.ToolbarItems>
-    <ScrollView x:Name="scrollView">
-        <StackLayout>
-           <!--<views:DetailAlbumView Annee="{Binding Path=Album.Annee}" Auteur="{Binding Path=Album.Auteur}" Nom="{Binding Path=Album.Nom}" ImageName="{Binding Path=Album.ImageName}"/>-->
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
             <VerticalStackLayout>
-                <Frame Style="{StaticResource Image}"
-                       VerticalOptions="Center"
-                       HorizontalOptions="Center">
-                    <Image Style="{StaticResource AlbumImage}" Source="{Binding Path=Album.ImageName}"    WidthRequest="200" 
-                        HeightRequest="200"></Image>
-                </Frame>
-        
-                <Label Style="{StaticResource AlbumTitle}"
-                    Text="{Binding Path=Album.Nom}"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center"/>
+               <!--<views:DetailAlbumView Annee="{Binding Path=Album.Annee}" Auteur="{Binding Path=Album.Auteur}" Nom="{Binding Path=Album.Nom}" ImageName="{Binding Path=Album.ImageName}"/>-->
+                <VerticalStackLayout>
+                    <Frame Style="{StaticResource Image}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                        <Image Style="{StaticResource AlbumImage}" Source="{Binding Path=Album.ImageName}"></Image>
+                    </Frame>
 
-                <Label Style="{StaticResource AlbumAutor}"
-                    Text="{Binding Path=Album.Auteur}"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center" />
+                    <Label Style="{StaticResource AlbumTitle}"
+                        Text="{Binding Path=Album.Nom}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"/>
+                    <Label Style="{StaticResource AlbumAutor}"
+                        Text="{Binding Path=Album.Auteur}"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" />
+                    <HorizontalStackLayout VerticalOptions="Center" 
+                            HorizontalOptions="Center">
+                        <Label Style="{StaticResource AlbumYear}"
+                            Text="Jazz · " />
+                        <Label Style="{StaticResource AlbumYear}"
+                            Text="{Binding Path=Album.Annee}" />  
+                    </HorizontalStackLayout>
 
-                <Label Style="{StaticResource AlbumYear}"
-                    Text="{Binding Path=Album.Annee}"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center" />
-
-                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,5" >
-                    <views:BouttonView Nom="Lecture" ImageNom="play_red.png"></views:BouttonView>
-                    <views:BouttonView Nom="Aléatoire" ImageNom="shuffle.png"></views:BouttonView>
-                </HorizontalStackLayout>
+                    <HorizontalStackLayout HorizontalOptions="Center" Margin="0,5" >
+                        <views:BouttonView Nom="Lecture" ImageNom="play_red.png"></views:BouttonView>
+                        <views:BouttonView Nom="Aléatoire" ImageNom="shuffle.png"></views:BouttonView>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+                <views:MusicListView/>
+                <views:BottomAlbumView/>
             </VerticalStackLayout>
-            <views:MusicListView/>
-            <views:BottomAlbumView/>
-        </StackLayout>
-    </ScrollView>
+ 
+        </ScrollView>
+        <VerticalStackLayout AbsoluteLayout.LayoutBounds="0, 1, 1, 64" 
+                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
+             <views:AlbumPlayView></views:AlbumPlayView>
+        </VerticalStackLayout>
+    </AbsoluteLayout>
+    
 </ContentPage>
