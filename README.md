@@ -2,7 +2,7 @@
 
 Bienvenue sur l'émulation de l'application AppleMusic
 
-Le projet est une reproduction partiel de l'application AppleMusic de l'iPhone sous iOS.
+Le projet est une reproduction partielle de l'application AppleMusic de l'iPhone sous iOS.
 
 # Sommaire
 
@@ -12,7 +12,7 @@ Le projet est une reproduction partiel de l'application AppleMusic de l'iPhone s
 
 # Requirements
 
-Le projet utilise .NET7, je vous conseille de le lancé sur Visual Studio 2022 (ou 2019).
+Le projet utilise .NET7, je vous conseille de le lancer sur Visual Studio 2022 (ou 2019).
 
 ## Lancement:
 
